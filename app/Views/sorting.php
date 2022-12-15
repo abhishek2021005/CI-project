@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sorting Visualization</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         *{
 	margin: 0;
@@ -134,6 +135,8 @@ input[type="button"], button{
 			<button onclick="reset()">Generate New Array</button>
 		</div>
 	</div>
+	<a class="btn btn-primary" href="/users-list" role="button">View Database</a>
+	<!-- <button type="button" >View Database</button> -->
 	<div id="container">
 	</div>
     <script>
@@ -216,7 +219,7 @@ function MapRange(value, in_min, in_max, out_min, out_max) {
 // 1
 // SELECTION SORT
 
-// SelectionSort() : Implementation of selection sort algorithm. O(n^2) 
+// SelectionSort() : Implementation of selection sort algorithm. O(n^2)
 async function SelectionSort() {
 	let delay = Disable_The_Input();
 
@@ -306,7 +309,7 @@ async function BubbleSort() {
 // 3
 // INSERTION SORT
 
-// InsertionSort() : Implementation of inserion sort algorithm. O(n^2) 
+// InsertionSort() : Implementation of inserion sort algorithm. O(n^2)
 async function InsertionSort() {
 	let delay = Disable_The_Input();
 	let container = document.getElementById("container");
@@ -342,7 +345,7 @@ async function InsertionSort() {
 
 // 4
 // MERGE SORT
-// Slide_down() : Places bars[r] at lth position by sliding other bars to the right. 
+// Slide_down() : Places bars[r] at lth position by sliding other bars to the right.
 function Slide_down(l, r) {
 	let temp = bars[r];
 	for (let i = r - 1; i >= l; i--) {
@@ -406,7 +409,7 @@ async function MergeSort() {
 
 // 5
 // QUICK SORT
-// Partition(): Places the (r)th bar at the correct position 
+// Partition(): Places the (r)th bar at the correct position
 async function Partition(l, r, d) {
 	let i = l - 1;
 	let j = l;
@@ -526,7 +529,7 @@ async function HeapSort() {
 		await Heapfiy(i, 0, delay);
 	}
 	Finished_Sorting();
-} 
+}
 </script>
 	<!-- <script src="App/script.js"></script> -->
 </body>
