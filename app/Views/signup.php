@@ -33,6 +33,10 @@
                         <button type="submit" class="btn btn-dark">Signup</button>
                     </div>
                 </form>
+                <div >
+                <h8>Already have an account?</h8>
+                <a class="btn btn-success" href="/signin" role="button" style="margin:10px;">Login</a>
+                </div>
             </div>
         </div>
     </div>
